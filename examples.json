@@ -1,0 +1,67 @@
+[
+  {
+    "label": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+    "input": {
+      "p": 20,
+      "d": 5,
+      "conf": "95"
+    },
+    "expected": {
+      "raw": {
+        "n0": 245.853368402944,
+        "final": 246
+      },
+      "main": "246",
+      "level": "info",
+      "tol": 1e-8
+    },
+    "originalInput": {
+      "p": 20,
+      "d": 5,
+      "conf": "95"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "50%, ±5 pontos, 95%, população de 1.000: 278",
+    "input": {
+      "p": 50,
+      "d": 5,
+      "conf": "95",
+      "pop": 1000
+    },
+    "expected": {
+      "raw": {
+        "n0": 384.15,
+        "final": 278
+      },
+      "main": "278"
+    },
+    "originalInput": {
+      "p": 50,
+      "d": 5,
+      "conf": "95",
+      "pop": 1000
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+    "input": {
+      "p": 50,
+      "d": 5,
+      "conf": "95",
+      "perdas": 10
+    },
+    "expected": {
+      "main": "428"
+    },
+    "originalInput": {
+      "p": 50,
+      "d": 5,
+      "conf": "95",
+      "perdas": 10
+    },
+    "expandedZeroOptions": []
+  }
+]
