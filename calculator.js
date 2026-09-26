@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-tamanho-amostral-proporcao · Elucenia · https://github.com/Elucenia/tool-tamanho-amostral-proporcao
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"tamanho-amostral-proporcao","title":"Tamanho amostral para estimar uma proporção","fields":[["p","Proporção esperada (se desconhecida, use 50%)","num",{"min":1,"max":99,"step":0.1,"unit":"%","ph":"20"}],["d","Margem de erro absoluta (precisão)","num",{"min":0.5,"max":30,"step":0.1,"unit":"pontos %","ph":"5"}],["conf","Nível de confiança","radio",{"opts":{"90":"90%","95":"95%","99":"99%"}}],["pop","Tamanho da população (opcional, para população finita)","num",{"min":10,"max":100000000,"step":1,"unit":"pessoas","opt":true}],["perdas","Perdas e recusas previstas (opcional)","num",{"min":0,"max":50,"step":1,"unit":"%","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
