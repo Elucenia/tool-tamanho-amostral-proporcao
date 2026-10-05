@@ -3,12 +3,13 @@
     "id": "tamanho-amostral-proporcao",
     "title": "Tamanho amostral para estimar uma proporção",
     "short": "Amostra para prevalência com margem de erro definida",
+    "desc": "Calcule o tamanho da amostra para estimar uma prevalência ou proporção com a margem de erro e a confiança desejadas, com correção para população finita e perdas.",
+    "lead": "Estima quantas pessoas estudar para medir uma prevalência (ou outra proporção) com precisão definida, em amostragem aleatória simples.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-preventiva-e-social",
       "medicina-de-familia-e-comunidade"
     ],
-    "desc": "Calcule o tamanho da amostra para estimar uma prevalência ou proporção com a margem de erro e a confiança desejadas, com correção para população finita e perdas.",
-    "lead": "Estima quantas pessoas estudar para medir uma prevalência (ou outra proporção) com precisão definida, em amostragem aleatória simples.",
     "fields": [
       [
         "p",
@@ -72,39 +73,6 @@
       ]
     ],
     "formula": "<p>n<sub>0</sub> = z² × p × (1 − p) / d², com z = 1,645 (90%), 1,96 (95%) ou 2,576 (99%) e d = margem de erro absoluta.</p><p>População finita (N): n = n<sub>0</sub> / [1 + (n<sub>0</sub> − 1) / N]. Perdas: n<sub>final</sub> = n / (1 − proporção de perdas). Todos os valores são arredondados para cima.</p><p><strong>Precisão numérica:</strong> no cálculo de 95%, o quantil é z = 1,959964; 1,96 acima é sua apresentação arredondada. A correção do caso de referência está registrada na procedência do acervo.</p>",
-    "table": [
-      [
-        "Proporção esperada",
-        "d = 3 pontos",
-        "d = 5 pontos",
-        "d = 10 pontos"
-      ],
-      [
-        "10% ou 90%",
-        "385",
-        "139",
-        "35"
-      ],
-      [
-        "20% ou 80%",
-        "683",
-        "246",
-        "62"
-      ],
-      [
-        "50%",
-        "1.068",
-        "385",
-        "97"
-      ]
-    ],
-    "table_note": "Amostras com 95% de confiança e população infinita.",
-    "tips": [
-      "Sem estimativa prévia da proporção, use 50%: é o valor que gera a maior amostra (cenário conservador).",
-      "Para proporções pequenas (abaixo de 10%), uma margem absoluta de 5 pontos é grosseira: prefira margens de 1 a 2 pontos ou margem relativa.",
-      "A fórmula vale para <strong>amostragem aleatória simples</strong>. Em amostragem por conglomerados (domicílios, escolas, UBS), multiplique pelo efeito do desenho, em geral de 1,5 a 2.",
-      "A correção para população finita só faz diferença quando a amostra passa de cerca de 5% da população."
-    ],
     "sources": [
       [
         "Lwanga SK, Lemeshow S. Sample size determination in health studies: a practical manual. Organização Mundial da Saúde, 1991.",
@@ -113,6 +81,10 @@
       [
         "Charan J, Biswas T. How to calculate sample size for different study designs in medical research? Indian J Psychol Med, 2013.",
         "https://doi.org/10.4103/0253-7176.116232"
+      ],
+      [
+        "Charan/Biswas2013 original article content",
+        "https://www.yoursearchevidence.com/sites/g/files/vrxlpx50391/files/2024-10/M2_ParticularidadesInvestigacion.pdf"
       ]
     ],
     "cases": [
@@ -162,9 +134,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -177,42 +146,166 @@
       "testedAt": "2026-09-25",
       "total": 2,
       "passed": 2,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "WHO/Lwanga Lemeshow 1991:proporçãoúnica, correçãopopulaçãofinita, perdas, teto; z 95%1,959964",
+    "implementationVersion": "tamanho-amostral-proporcao@native-2026-10-03+0f862c2823b0",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775042/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "n 0 = z² × p × (1 − p) / d², com z = 1,645 (90%), 1,96 (95%) ou 2,576 (99%) e d = margem de erro absoluta. População finita (N): n = n 0 / [1 + (n 0 − 1) / N]. Perdas: n final = n / (1 − proporção de perdas). Todos os valores são arredondados para cima. Precisão numérica: no cálculo de 95%, o quantil é z = 1,959964; 1,96 acima é sua apresentação arredondada. A correção do caso de referência está registrada na procedência do acervo.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "p",
+            "label": "Proporção esperada (se desconhecida, use 50%)",
+            "type": "num",
+            "min": 1,
+            "max": 99,
+            "unit": "%",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "d",
+            "label": "Margem de erro absoluta (precisão)",
+            "type": "num",
+            "min": 0.5,
+            "max": 30,
+            "unit": "pontos %",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "conf",
+            "label": "Nível de confiança",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "90": "90%",
+              "95": "95%",
+              "99": "99%"
+            }
+          },
+          {
+            "key": "pop",
+            "label": "Tamanho da população (opcional, para população finita)",
+            "type": "num",
+            "min": 10,
+            "max": 100000000,
+            "unit": "pessoas",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "perdas",
+            "label": "Perdas e recusas previstas (opcional)",
+            "type": "num",
+            "min": 0,
+            "max": 50,
+            "unit": "%",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "28373069ba4597a8cb5ef94752752674002f4e7e0ca3a887369e0eb77ec441bc"
+      },
+      "sourceEditions": [
         {
-          "label": "Quantil95% documentado sem arredondar para1,96",
-          "input": {
-            "p": 20,
-            "d": 5,
-            "conf": "95"
-          },
-          "expected": {
-            "n0": 245.85336840294397,
-            "final": 246
-          },
-          "status": "passed",
-          "failures": []
+          "citation": "Lwanga SK, Lemeshow S. Sample size determination in health studies: a practical manual. Organização Mundial da Saúde, 1991.",
+          "url": "https://iris.who.int/handle/10665/40062",
+          "class": "source-access-inconclusive",
+          "publicationEditionConfirmed": false,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "edition": "Lwanga/Lemeshow, WHO 1991, cited edition; institutional handle inaccessible via browsing tool.",
+          "reason": "WHO IRIS open returned inaccessible; alternate primary statistical article in catalogue has bibliographic confirmation."
         },
         {
-          "label": "Metade da margem quadruplica n0",
-          "input": {
-            "p": 20,
-            "d": 2.5,
-            "conf": "95"
+          "citation": "Charan J, Biswas T. How to calculate sample size for different study designs in medical research? Indian J Psychol Med, 2013.",
+          "url": "https://doi.org/10.4103/0253-7176.116232",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "How to calculate sample size for different study designs in medical research?",
+            "year": "2013",
+            "firstPublicationDate": "2013-04-01",
+            "doi": "10.4103/0253-7176.116232",
+            "pmid": "24049221",
+            "pmcid": "PMC3775042",
+            "journal": "Indian journal of psychological medicine",
+            "authors": "Charan J, Biswas T."
           },
-          "expected": {
-            "n0": 983.4134736117759,
-            "final": 984
-          },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775042/",
+          "abstractAvailable": true,
+          "fullTextSha256": "783b0734e1cb433d1eef605660f823108ec1fb7f50e3c46fca23fcdc55d5635b",
+          "abstractSha256": "d382d5fb7e2a96cac101c35d11738c160ed5be23c13ef8a83b93c110d9831208",
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 2,
+        "passed": 2,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "0f862c2823b0fea968293a6c92dd469fd923a670cc7572d7a9525451219bab38"
+    },
+    "limits": "Use uma proporção esperada e uma margem de erro absoluta, nas unidades indicadas, para estimar uma proporção em amostragem simples. O nível de confiança não é poder estatístico de uma comparação. A correção de população finita pressupõe a população definida; não incorpora automaticamente conglomerados, estratificação ou efeito de desenho. A inflação para perdas aumenta o recrutamento, mas não elimina viés de não resposta. A aproximação normal e a íntegra do manual WHO 1991 não foram validadas para cada desenho por esta interface.",
+    "limitsEvidence": {
+      "status": "direct-original-content-named-sections-read-manual-inaccessible",
+      "sources": [
+        {
+          "url": "https://www.yoursearchevidence.com/sites/g/files/vrxlpx50391/files/2024-10/M2_ParticularidadesInvestigacion.pdf",
+          "edition": "Charan/Biswas2013 original article content",
+          "readScope": "Original article cross-sectionalproportion section and design considerations,printedpp121–125 text read:expectedp,absoluteerror and design-specificmethod."
+        },
+        {
+          "url": "https://iris.who.int/handle/10665/40062",
+          "edition": "WHO Lwanga/Lemeshow1991",
+          "readScope": "Identity only;manual403/not read."
+        }
+      ],
+      "populationScope": "Simple proportion estimation with absolute precision;not a complex sample design.",
+      "remainingChecks": [
+        "WHO1991 original manual inaccessible.",
+        "No universal normal-approximation performance or complexsurvey validation."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/tamanho-amostral-proporcao/calculator.js",
+    "bytes": 5699,
+    "sha256": "0f862c2823b0fea968293a6c92dd469fd923a670cc7572d7a9525451219bab38"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5d341a3937050ab7a05b6791b76ce21e492044e0d9658ec0c7125ac2144d7732",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 2,
+      "sha256": "48f4f6ed899fedcc59bda76f0b4a70f0000cfe4db70059241049a2a91bb5de2e",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 2,
+      "sha256": "48f4f6ed899fedcc59bda76f0b4a70f0000cfe4db70059241049a2a91bb5de2e",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

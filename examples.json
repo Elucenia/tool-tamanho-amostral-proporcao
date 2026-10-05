@@ -1,6 +1,14 @@
 [
   {
-    "label": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+    "id": "tamanho-amostral-proporcao",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+    "originalInput": {
+      "p": 20,
+      "d": 5,
+      "conf": "95"
+    },
     "input": {
       "p": 20,
       "d": 5,
@@ -15,15 +23,38 @@
       "level": "info",
       "tol": 1e-8
     },
-    "originalInput": {
-      "p": 20,
-      "d": 5,
-      "conf": "95"
+    "recordedResult": {
+      "main": [
+        "246",
+        "participantes"
+      ],
+      "label": "Tamanho amostral",
+      "raw": {
+        "n0": 245.85336840294397,
+        "n": 245.85336840294397,
+        "final": 246
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "50%, ±5 pontos, 95%, população de 1.000: 278",
+    "id": "tamanho-amostral-proporcao",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+    "originalInput": {
+      "p": 50,
+      "d": 5,
+      "conf": "95",
+      "pop": 1000
+    },
     "input": {
       "p": 50,
       "d": 5,
@@ -37,16 +68,38 @@
       },
       "main": "278"
     },
+    "recordedResult": {
+      "main": [
+        "278",
+        "participantes"
+      ],
+      "label": "Tamanho amostral",
+      "raw": {
+        "n0": 384.14588812959994,
+        "n": 277.7334563377639,
+        "final": 278
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "tamanho-amostral-proporcao",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
     "originalInput": {
       "p": 50,
       "d": 5,
       "conf": "95",
-      "pop": 1000
+      "perdas": 10
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
     "input": {
       "p": 50,
       "d": 5,
@@ -56,12 +109,25 @@
     "expected": {
       "main": "428"
     },
-    "originalInput": {
-      "p": 50,
-      "d": 5,
-      "conf": "95",
-      "perdas": 10
+    "recordedResult": {
+      "main": [
+        "428",
+        "participantes"
+      ],
+      "label": "Tamanho amostral",
+      "raw": {
+        "n0": 384.14588812959994,
+        "n": 384.14588812959994,
+        "final": 428
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

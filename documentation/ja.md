@@ -1,0 +1,93 @@
+<!-- ELUCENIA technical documentation · tamanho-amostral-proporcao · ja · no clinical/professional/rights approval -->
+
+# 比率を推定する標本サイズ
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/tamanho-amostral-proporcao)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 予想割合（不明なら50%を使用）
+
+`p`
+
+% · 範囲: 1–99
+
+### 絶対誤差幅（精度）
+
+`d`
+
+パーセントポイント · 範囲: 0.5–30
+
+### 信頼水準
+
+`conf`
+
+- `90` — 90%
+- `95` — 95%
+- `99` — 99%
+
+### 母集団サイズ（任意、有限母集団用）
+
+`pop`
+
+人 · 任意 · 範囲: 10–100000000
+
+### 予想脱落・拒否率（任意）
+
+`perdas`
+
+% · 任意 · 範囲: 0–50
+
+## 方法の版
+
+WHO/Lwanga–Lemeshow 1991：単比率、有限母集団補正、脱落、切上げ、95% z1.959964
+
+## 記載された計算式
+
+n0 = z² × p × (1 − p) / d²; z = 1.645 (90%), 1.96 (95%) または 2.576 (99%); d = 絶対誤差.
+
+有限母集団（N）: n = n0 / \[1 + (n0 − 1) / N\]. 脱落: nfinal = n / (1 − 脱落割合). 全数値を切り上げ。
+
+数値精度： 95%計算のz=1.959964、上記1.96は丸め表示。参照事例補正はカタログ来歴に記録。
+
+## 限界・対象集団
+
+指定単位の予想割合と絶対誤差幅を用い、単純抽出で割合を推定します。信頼水準は比較検定の検出力ではありません。有限母集団補正は定義された母集団を前提とし、クラスター、層化、デザイン効果を自動的に含みません。脱落に備えた人数増加は募集人数を増やしますが、無回答バイアスを除きません。この画面は正規近似や WHO 1991 手引き全体をすべてのデザインについて検証したものではありません。
+
+## 参考文献
+
+- [Lwanga SK, Lemeshow S. Sample size determination in health studies: a practical manual. Organização Mundial da Saúde, 1991.](https://iris.who.int/handle/10665/40062)
+
+- [Charan J, Biswas T. How to calculate sample size for different study designs in medical research? Indian J Psychol Med, 2013.](https://doi.org/10.4103/0253-7176.116232)
+
+- [Charan/Biswas2013 original article content](https://www.yoursearchevidence.com/sites/g/files/vrxlpx50391/files/2024-10/M2_ParticularidadesInvestigacion.pdf)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

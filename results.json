@@ -1,0 +1,344 @@
+{
+  "id": "tamanho-amostral-proporcao",
+  "at": "2026-10-05T17:30:10.610Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/tamanho-amostral-proporcao/calculator.js",
+    "bytes": 5699,
+    "sha256": "0f862c2823b0fea968293a6c92dd469fd923a670cc7572d7a9525451219bab38"
+  },
+  "cases": [
+    {
+      "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+      "input": {
+        "p": 20,
+        "d": 5,
+        "conf": "95"
+      },
+      "obtained": {
+        "id": "tamanho-amostral-proporcao",
+        "main": [
+          "246",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "raw": {
+          "n0": 245.85336840294397,
+          "n": 245.85336840294397,
+          "final": 246
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "246",
+          "obtained": "246",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n0",
+          "expected": 245.853368402944,
+          "obtained": 245.85336840294397,
+          "tolerance": 1e-8,
+          "difference": 2.842170943040401e-14,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.final",
+          "expected": 246,
+          "obtained": 246,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n0",
+          "expected": 245.85336840294397,
+          "obtained": 245.85336840294397,
+          "tolerance": 2.45853368402944e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 245.85336840294397,
+          "obtained": 245.85336840294397,
+          "tolerance": 2.45853368402944e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.final",
+          "expected": 246,
+          "obtained": 246,
+          "tolerance": 2.46e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "246",
+          "obtained": "246",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "participantes",
+          "obtained": "participantes",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+      "input": {
+        "p": 50,
+        "d": 5,
+        "conf": "95",
+        "pop": 1000
+      },
+      "obtained": {
+        "id": "tamanho-amostral-proporcao",
+        "main": [
+          "278",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "raw": {
+          "n0": 384.14588812959994,
+          "n": 277.7334563377639,
+          "final": 278
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "278",
+          "obtained": "278",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.n0",
+          "expected": 384.15,
+          "obtained": 384.14588812959994,
+          "tolerance": 0.00500001,
+          "difference": 0.004111870400038242,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.final",
+          "expected": 278,
+          "obtained": 278,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n0",
+          "expected": 384.14588812959994,
+          "obtained": 384.14588812959994,
+          "tolerance": 3.8414588812959994e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 277.7334563377639,
+          "obtained": 277.7334563377639,
+          "tolerance": 2.777334563377639e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.final",
+          "expected": 278,
+          "obtained": 278,
+          "tolerance": 2.7799999999999997e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "278",
+          "obtained": "278",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "participantes",
+          "obtained": "participantes",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+      "input": {
+        "p": 50,
+        "d": 5,
+        "conf": "95",
+        "perdas": 10
+      },
+      "obtained": {
+        "id": "tamanho-amostral-proporcao",
+        "main": [
+          "428",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "raw": {
+          "n0": 384.14588812959994,
+          "n": 384.14588812959994,
+          "final": 428
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "428",
+          "obtained": "428",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n0",
+          "expected": 384.14588812959994,
+          "obtained": 384.14588812959994,
+          "tolerance": 3.8414588812959994e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.n",
+          "expected": 384.14588812959994,
+          "obtained": 384.14588812959994,
+          "tolerance": 3.8414588812959994e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.final",
+          "expected": 428,
+          "obtained": 428,
+          "tolerance": 4.2799999999999997e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "428",
+          "obtained": "428",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "participantes",
+          "obtained": "participantes",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 43,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
