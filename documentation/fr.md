@@ -91,3 +91,42 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Échantillon nécessaire pour estimer 20,0 % ± 5,0 points de pourcentage avec une confiance de 95 %
+
+| Détails du résultat | |
+| --- | --- |
+| Échantillon sans correction (population infinie) | 246 |
+
+Formule pour un échantillonnage aléatoire simple. En échantillonnage en grappes, multiplier par l’effet de plan (généralement 1,5 à 2).
+
+
+### 2
+
+Échantillon nécessaire pour estimer 50,0 % ± 5,0 points de pourcentage avec une confiance de 95 %
+
+| Détails du résultat | |
+| --- | --- |
+| Échantillon sans correction (population infinie) | 385 |
+| Avec correction pour population finie (N = 1000) | 278 |
+
+Formule pour un échantillonnage aléatoire simple. En échantillonnage en grappes, multiplier par l’effet de plan (généralement 1,5 à 2).
+
+
+### 3
+
+Échantillon nécessaire pour estimer 50,0 % ± 5,0 points de pourcentage avec une confiance de 95 %
+
+| Détails du résultat | |
+| --- | --- |
+| Échantillon sans correction (population infinie) | 385 |
+| En ajoutant 10 % de pertes | 428 |
+
+Formule pour un échantillonnage aléatoire simple. En échantillonnage en grappes, multiplier par l’effet de plan (généralement 1,5 à 2).
+

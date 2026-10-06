@@ -91,3 +91,42 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Sample needed to estimate 20.0% ± 5.0 percentage points with 95% confidence
+
+| Result details | |
+| --- | --- |
+| Sample without correction (infinite population) | 246 |
+
+Formula for simple random sampling. In cluster sampling, multiply by the design effect (usually 1.5 to 2).
+
+
+### 2
+
+Sample needed to estimate 50.0% ± 5.0 percentage points with 95% confidence
+
+| Result details | |
+| --- | --- |
+| Sample without correction (infinite population) | 385 |
+| With finite population correction (N = 1000) | 278 |
+
+Formula for simple random sampling. In cluster sampling, multiply by the design effect (usually 1.5 to 2).
+
+
+### 3
+
+Sample needed to estimate 50.0% ± 5.0 percentage points with 95% confidence
+
+| Result details | |
+| --- | --- |
+| Sample without correction (infinite population) | 385 |
+| Adding 10% for losses | 428 |
+
+Formula for simple random sampling. In cluster sampling, multiply by the design effect (usually 1.5 to 2).
+

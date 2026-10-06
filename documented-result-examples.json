@@ -1,0 +1,1541 @@
+{
+  "id": "tamanho-amostral-proporcao",
+  "implementationVersion": "tamanho-amostral-proporcao@native-2026-10-05+59b35f7a2057",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Amostra sem correção (população infinita)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "246",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Amostra necessária para estimar 20,0% ± 5,0 pontos percentuais com 95% de confiança",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Amostra sem correção (população infinita)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "385",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Com correção para população finita (N = 1.000)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "278",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Amostra necessária para estimar 50,0% ± 5,0 pontos percentuais com 95% de confiança",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Amostra sem correção (população infinita)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "385",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Acrescentando 10% de perdas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "428",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Amostra necessária para estimar 50,0% ± 5,0 pontos percentuais com 95% de confiança",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sample without correction (infinite population)",
+                "locale": "en",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "246",
+                "locale": "en",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sample needed to estimate 20.0% ± 5.0 percentage points with 95% confidence",
+            "locale": "en",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formula for simple random sampling. In cluster sampling, multiply by the design effect (usually 1.5 to 2).",
+            "locale": "en",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sample without correction (infinite population)",
+                "locale": "en",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "en",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "With finite population correction (N = 1000)",
+                "locale": "en",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "278",
+                "locale": "en",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sample needed to estimate 50.0% ± 5.0 percentage points with 95% confidence",
+            "locale": "en",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formula for simple random sampling. In cluster sampling, multiply by the design effect (usually 1.5 to 2).",
+            "locale": "en",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sample without correction (infinite population)",
+                "locale": "en",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "en",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Adding 10% for losses",
+                "locale": "en",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "428",
+                "locale": "en",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Sample needed to estimate 50.0% ± 5.0 percentage points with 95% confidence",
+            "locale": "en",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formula for simple random sampling. In cluster sampling, multiply by the design effect (usually 1.5 to 2).",
+            "locale": "en",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Muestra sin corrección (población infinita)",
+                "locale": "es",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "246",
+                "locale": "es",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Muestra necesaria para estimar 20,0% ± 5,0 puntos porcentuales con 95% de confianza",
+            "locale": "es",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Fórmula para muestreo aleatorio simple. En el muestreo por conglomerados, multiplíquese por el efecto del diseño (en general 1,5 a 2).",
+            "locale": "es",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Muestra sin corrección (población infinita)",
+                "locale": "es",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "es",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Con corrección para población finita (N = 1000)",
+                "locale": "es",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "278",
+                "locale": "es",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Muestra necesaria para estimar 50,0% ± 5,0 puntos porcentuales con 95% de confianza",
+            "locale": "es",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Fórmula para muestreo aleatorio simple. En el muestreo por conglomerados, multiplíquese por el efecto del diseño (en general 1,5 a 2).",
+            "locale": "es",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Muestra sin corrección (población infinita)",
+                "locale": "es",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "es",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Añadiendo 10% de pérdidas",
+                "locale": "es",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "428",
+                "locale": "es",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Muestra necesaria para estimar 50,0% ± 5,0 puntos porcentuales con 95% de confianza",
+            "locale": "es",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Fórmula para muestreo aleatorio simple. En el muestreo por conglomerados, multiplíquese por el efecto del diseño (en general 1,5 a 2).",
+            "locale": "es",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Échantillon sans correction (population infinie)",
+                "locale": "fr",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "246",
+                "locale": "fr",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Échantillon nécessaire pour estimer 20,0 % ± 5,0 points de pourcentage avec une confiance de 95 %",
+            "locale": "fr",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formule pour un échantillonnage aléatoire simple. En échantillonnage en grappes, multiplier par l’effet de plan (généralement 1,5 à 2).",
+            "locale": "fr",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Échantillon sans correction (population infinie)",
+                "locale": "fr",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "fr",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Avec correction pour population finie (N = 1000)",
+                "locale": "fr",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "278",
+                "locale": "fr",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Échantillon nécessaire pour estimer 50,0 % ± 5,0 points de pourcentage avec une confiance de 95 %",
+            "locale": "fr",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formule pour un échantillonnage aléatoire simple. En échantillonnage en grappes, multiplier par l’effet de plan (généralement 1,5 à 2).",
+            "locale": "fr",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Échantillon sans correction (population infinie)",
+                "locale": "fr",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "fr",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "En ajoutant 10 % de pertes",
+                "locale": "fr",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "428",
+                "locale": "fr",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Échantillon nécessaire pour estimer 50,0 % ± 5,0 points de pourcentage avec une confiance de 95 %",
+            "locale": "fr",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formule pour un échantillonnage aléatoire simple. En échantillonnage en grappes, multiplier par l’effet de plan (généralement 1,5 à 2).",
+            "locale": "fr",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Stichprobe ohne Korrektur (unendliche Population)",
+                "locale": "de",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "246",
+                "locale": "de",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Benötigte Stichprobe, um 20,0 % ± 5,0 Prozentpunkte mit 95 % Konfidenz zu schätzen",
+            "locale": "de",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formel für einfache Zufallsstichprobe. Bei Clusterstichproben mit dem Designeffekt multiplizieren (in der Regel 1,5 bis 2).",
+            "locale": "de",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Stichprobe ohne Korrektur (unendliche Population)",
+                "locale": "de",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "de",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Mit endlicher Population-Korrektur (N = 1000)",
+                "locale": "de",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "278",
+                "locale": "de",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Benötigte Stichprobe, um 50,0 % ± 5,0 Prozentpunkte mit 95 % Konfidenz zu schätzen",
+            "locale": "de",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formel für einfache Zufallsstichprobe. Bei Clusterstichproben mit dem Designeffekt multiplizieren (in der Regel 1,5 bis 2).",
+            "locale": "de",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Stichprobe ohne Korrektur (unendliche Population)",
+                "locale": "de",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "de",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Mit 10 % Verlusten zuschlagen",
+                "locale": "de",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "428",
+                "locale": "de",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Benötigte Stichprobe, um 50,0 % ± 5,0 Prozentpunkte mit 95 % Konfidenz zu schätzen",
+            "locale": "de",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formel für einfache Zufallsstichprobe. Bei Clusterstichproben mit dem Designeffekt multiplizieren (in der Regel 1,5 bis 2).",
+            "locale": "de",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Campione senza correzione (popolazione infinita)",
+                "locale": "it",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "246",
+                "locale": "it",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Campione necessario per stimare 20,0% ± 5,0 punti percentuali con 95% di confidenza",
+            "locale": "it",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formula per campionamento casuale semplice. Nel campionamento a grappoli, moltiplicare per l’effetto del disegno (in genere 1,5 a 2).",
+            "locale": "it",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Campione senza correzione (popolazione infinita)",
+                "locale": "it",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "it",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Con correzione per popolazione finita (N = 1000)",
+                "locale": "it",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "278",
+                "locale": "it",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Campione necessario per stimare 50,0% ± 5,0 punti percentuali con 95% di confidenza",
+            "locale": "it",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formula per campionamento casuale semplice. Nel campionamento a grappoli, moltiplicare per l’effetto del disegno (in genere 1,5 a 2).",
+            "locale": "it",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Campione senza correzione (popolazione infinita)",
+                "locale": "it",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "it",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Aggiungendo 10% di perdite",
+                "locale": "it",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "428",
+                "locale": "it",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Campione necessario per stimare 50,0% ± 5,0 punti percentuali con 95% di confidenza",
+            "locale": "it",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "Formula per campionamento casuale semplice. Nel campionamento a grappoli, moltiplicare per l’effetto del disegno (in genere 1,5 a 2).",
+            "locale": "it",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عينة دون تصحيح (مجتمع غير محدود)",
+                "locale": "ar",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "٢٤٦",
+                "locale": "ar",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "العينة المطلوبة لتقدير ٢٠٫٠% ± ٥٫٠ نقطة مئوية بثقة ٩٥%",
+            "locale": "ar",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "صيغة للمعاينة العشوائية البسيطة. في المعاينة العنقودية، يُضرب في تأثير التصميم (عادةً 1,5 إلى 2).",
+            "locale": "ar",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عينة دون تصحيح (مجتمع غير محدود)",
+                "locale": "ar",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "٣٨٥",
+                "locale": "ar",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مع تصحيح للمجتمع المحدود (N = ١٠٠٠)",
+                "locale": "ar",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "٢٧٨",
+                "locale": "ar",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "العينة المطلوبة لتقدير ٥٠٫٠% ± ٥٫٠ نقطة مئوية بثقة ٩٥%",
+            "locale": "ar",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "صيغة للمعاينة العشوائية البسيطة. في المعاينة العنقودية، يُضرب في تأثير التصميم (عادةً 1,5 إلى 2).",
+            "locale": "ar",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "عينة دون تصحيح (مجتمع غير محدود)",
+                "locale": "ar",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "٣٨٥",
+                "locale": "ar",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "بإضافة ١٠% مقابل الفاقد",
+                "locale": "ar",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "٤٢٨",
+                "locale": "ar",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "العينة المطلوبة لتقدير ٥٠٫٠% ± ٥٫٠ نقطة مئوية بثقة ٩٥%",
+            "locale": "ar",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "صيغة للمعاينة العشوائية البسيطة. في المعاينة العنقودية، يُضرب في تأثير التصميم (عادةً 1,5 إلى 2).",
+            "locale": "ar",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "未校正样本（无限总体）",
+                "locale": "zh",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "246",
+                "locale": "zh",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "以95%置信度估计20.0% ± 5.0个百分点所需的样本量",
+            "locale": "zh",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "简单随机抽样公式。在整群抽样中，乘以设计效应（通常为1.5至2）。",
+            "locale": "zh",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "未校正样本（无限总体）",
+                "locale": "zh",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "zh",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "采用有限总体校正（N = 1000）",
+                "locale": "zh",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "278",
+                "locale": "zh",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "以95%置信度估计50.0% ± 5.0个百分点所需的样本量",
+            "locale": "zh",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "简单随机抽样公式。在整群抽样中，乘以设计效应（通常为1.5至2）。",
+            "locale": "zh",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "未校正样本（无限总体）",
+                "locale": "zh",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "zh",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "加上10%的损耗",
+                "locale": "zh",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "428",
+                "locale": "zh",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "以95%置信度估计50.0% ± 5.0个百分点所需的样本量",
+            "locale": "zh",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "简单随机抽样公式。在整群抽样中，乘以设计效应（通常为1.5至2）。",
+            "locale": "zh",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "補正なしのサンプル（無限母集団）",
+                "locale": "ja",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "246",
+                "locale": "ja",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "95%の信頼度で20.0% ± 5.0パーセントポイントを推定するために必要なサンプル",
+            "locale": "ja",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "単純無作為抽出の式。クラスター抽出では、デザイン効果を掛ける（通常1.5から2）。",
+            "locale": "ja",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "補正なしのサンプル（無限母集団）",
+                "locale": "ja",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "ja",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "有限母集団補正あり（N = 1000）",
+                "locale": "ja",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "278",
+                "locale": "ja",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "95%の信頼度で50.0% ± 5.0パーセントポイントを推定するために必要なサンプル",
+            "locale": "ja",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "単純無作為抽出の式。クラスター抽出では、デザイン効果を掛ける（通常1.5から2）。",
+            "locale": "ja",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "補正なしのサンプル（無限母集団）",
+                "locale": "ja",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "ja",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "10%の脱落を加算",
+                "locale": "ja",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "428",
+                "locale": "ja",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "95%の信頼度で50.0% ± 5.0パーセントポイントを推定するために必要なサンプル",
+            "locale": "ja",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "単純無作為抽出の式。クラスター抽出では、デザイン効果を掛ける（通常1.5から2）。",
+            "locale": "ja",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "बिना सुधार के नमूना (अनंत जनसंख्या)",
+                "locale": "hi",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "246",
+                "locale": "hi",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  246
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "95% विश्वास के साथ 20.0% ± 5.0 प्रतिशत अंक का अनुमान लगाने के लिए आवश्यक नमूना",
+            "locale": "hi",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              20,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "सरल यादृच्छिक नमूनाकरण के लिए सूत्र। क्लस्टर नमूनाकरण में, डिज़ाइन प्रभाव से गुणा करें (आमतौर पर 1.5 से 2)।",
+            "locale": "hi",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "बिना सुधार के नमूना (अनंत जनसंख्या)",
+                "locale": "hi",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "hi",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सीमित जनसंख्या सुधार के साथ (N = 1000)",
+                "locale": "hi",
+                "template": "documented-authored-5abb82a015836b7655e5",
+                "sourceNumbers": [
+                  1000
+                ]
+              },
+              "value": {
+                "text": "278",
+                "locale": "hi",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  278
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "95% विश्वास के साथ 50.0% ± 5.0 प्रतिशत अंक का अनुमान लगाने के लिए आवश्यक नमूना",
+            "locale": "hi",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "सरल यादृच्छिक नमूनाकरण के लिए सूत्र। क्लस्टर नमूनाकरण में, डिज़ाइन प्रभाव से गुणा करें (आमतौर पर 1.5 से 2)।",
+            "locale": "hi",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "बिना सुधार के नमूना (अनंत जनसंख्या)",
+                "locale": "hi",
+                "template": "documented-authored-3528066e673249deb49d"
+              },
+              "value": {
+                "text": "385",
+                "locale": "hi",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  385
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "10% हानियों को जोड़ते हुए",
+                "locale": "hi",
+                "template": "documented-authored-fe168daaaeaf6851cc10",
+                "sourceNumbers": [
+                  10
+                ]
+              },
+              "value": {
+                "text": "428",
+                "locale": "hi",
+                "template": "documented-authored-491319a850a7e875df9b",
+                "sourceNumbers": [
+                  428
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "95% विश्वास के साथ 50.0% ± 5.0 प्रतिशत अंक का अनुमान लगाने के लिए आवश्यक नमूना",
+            "locale": "hi",
+            "template": "documented-authored-924f77aa8073b8b2c028",
+            "sourceNumbers": [
+              50,
+              5,
+              95
+            ]
+          },
+          "note": {
+            "text": "सरल यादृच्छिक नमूनाकरण के लिए सूत्र। क्लस्टर नमूनाकरण में, डिज़ाइन प्रभाव से गुणा करें (आमतौर पर 1.5 से 2)।",
+            "locale": "hi",
+            "template": "documented-authored-ed284afcbbcdf7366560"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

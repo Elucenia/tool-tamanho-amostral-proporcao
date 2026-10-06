@@ -149,7 +149,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "WHO/Lwanga Lemeshow 1991:proporçãoúnica, correçãopopulaçãofinita, perdas, teto; z 95%1,959964",
-    "implementationVersion": "tamanho-amostral-proporcao@native-2026-10-03+0f862c2823b0",
+    "implementationVersion": "tamanho-amostral-proporcao@native-2026-10-05+59b35f7a2057",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3775042/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -259,7 +259,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "0f862c2823b0fea968293a6c92dd469fd923a670cc7572d7a9525451219bab38"
+      "implementationHash": "59b35f7a2057ad0c62404b86fb01bad0584540c2b9eabeddb842202762c29124",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "tamanho-amostral-proporcao@native-2026-10-03+0f862c2823b0",
+          "previousImplementationHash": "0f862c2823b0fea968293a6c92dd469fd923a670cc7572d7a9525451219bab38",
+          "implementationHash": "59b35f7a2057ad0c62404b86fb01bad0584540c2b9eabeddb842202762c29124",
+          "scientificBodySha256": "0003ea01031f53e1ae7e3cdce2e028bc99745ff1c5a67a6df838d8a52d00f5ce",
+          "metadataContractHash": "28373069ba4597a8cb5ef94752752674002f4e7e0ca3a887369e0eb77ec441bc",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Use uma proporção esperada e uma margem de erro absoluta, nas unidades indicadas, para estimar uma proporção em amostragem simples. O nível de confiança não é poder estatístico de uma comparação. A correção de população finita pressupõe a população definida; não incorpora automaticamente conglomerados, estratificação ou efeito de desenho. A inflação para perdas aumenta o recrutamento, mas não elimina viés de não resposta. A aproximação normal e a íntegra do manual WHO 1991 não foram validadas para cada desenho por esta interface.",
     "limitsEvidence": {
@@ -289,20 +317,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/tamanho-amostral-proporcao/calculator.js",
-    "bytes": 5699,
-    "sha256": "0f862c2823b0fea968293a6c92dd469fd923a670cc7572d7a9525451219bab38"
+    "bytes": 5904,
+    "sha256": "59b35f7a2057ad0c62404b86fb01bad0584540c2b9eabeddb842202762c29124"
   },
-  "sourceToolSha256": "5d341a3937050ab7a05b6791b76ce21e492044e0d9658ec0c7125ac2144d7732",
+  "sourceToolSha256": "8d24962a6861a758563b06abbc432b6331cb5aab6f70c0e557714e0ca115ea47",
   "omittedFullReferenceBanks": [
     {
       "rows": 2,
       "sha256": "48f4f6ed899fedcc59bda76f0b4a70f0000cfe4db70059241049a2a91bb5de2e",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 2,
       "sha256": "48f4f6ed899fedcc59bda76f0b4a70f0000cfe4db70059241049a2a91bb5de2e",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

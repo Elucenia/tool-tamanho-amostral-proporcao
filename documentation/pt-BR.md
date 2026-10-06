@@ -91,3 +91,42 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Amostra necessária para estimar 20,0% ± 5,0 pontos percentuais com 95% de confiança
+
+| Detalhes do resultado | |
+| --- | --- |
+| Amostra sem correção (população infinita) | 246 |
+
+Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).
+
+
+### 2
+
+Amostra necessária para estimar 50,0% ± 5,0 pontos percentuais com 95% de confiança
+
+| Detalhes do resultado | |
+| --- | --- |
+| Amostra sem correção (população infinita) | 385 |
+| Com correção para população finita (N = 1.000) | 278 |
+
+Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).
+
+
+### 3
+
+Amostra necessária para estimar 50,0% ± 5,0 pontos percentuais com 95% de confiança
+
+| Detalhes do resultado | |
+| --- | --- |
+| Amostra sem correção (população infinita) | 385 |
+| Acrescentando 10% de perdas | 428 |
+
+Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).
+

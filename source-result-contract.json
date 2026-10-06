@@ -1,0 +1,222 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "tamanho-amostral-proporcao",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "4cc3de2496973ca86fb5342e52789ff99eb79ab2",
+    "oldEngineSha256": "0f862c2823b0fea968293a6c92dd469fd923a670cc7572d7a9525451219bab38",
+    "currentEngineSha256": "59b35f7a2057ad0c62404b86fb01bad0584540c2b9eabeddb842202762c29124"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Prevalência de 20%, margem de 5 pontos, 95%: 246 (exemplo do manual da OMS)",
+      "input": {
+        "p": 20,
+        "d": 5,
+        "conf": "95"
+      },
+      "publicOutput": {
+        "id": "tamanho-amostral-proporcao",
+        "main": [
+          "246",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "raw": {
+          "n0": 245.85336840294397,
+          "n": 245.85336840294397,
+          "final": 246
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "n0": 245.853368402944,
+          "final": 246
+        },
+        "main": "246",
+        "level": "info",
+        "tol": 1e-8
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "246",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "level": "info",
+        "verdict": "Amostra necessária para estimar 20,0% ± 5,0 pontos percentuais com 95% de confiança",
+        "rows": [
+          [
+            "Amostra sem correção (população infinita)",
+            "246"
+          ]
+        ],
+        "note": "Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).",
+        "raw": {
+          "n0": 245.85336840294397,
+          "n": 245.85336840294397,
+          "final": 246
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "50%, ±5 pontos, 95%, população de 1.000: 278",
+      "input": {
+        "p": 50,
+        "d": 5,
+        "conf": "95",
+        "pop": 1000
+      },
+      "publicOutput": {
+        "id": "tamanho-amostral-proporcao",
+        "main": [
+          "278",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "raw": {
+          "n0": 384.14588812959994,
+          "n": 277.7334563377639,
+          "final": 278
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "n0": 384.15,
+          "final": 278
+        },
+        "main": "278"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "278",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "level": "info",
+        "verdict": "Amostra necessária para estimar 50,0% ± 5,0 pontos percentuais com 95% de confiança",
+        "rows": [
+          [
+            "Amostra sem correção (população infinita)",
+            "385"
+          ],
+          [
+            "Com correção para população finita (N = 1.000)",
+            "278"
+          ]
+        ],
+        "note": "Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).",
+        "raw": {
+          "n0": 384.14588812959994,
+          "n": 277.7334563377639,
+          "final": 278
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "50%, ±5 pontos, 95%, 10% de perdas: 385 / 0,9 = 428",
+      "input": {
+        "p": 50,
+        "d": 5,
+        "conf": "95",
+        "perdas": 10
+      },
+      "publicOutput": {
+        "id": "tamanho-amostral-proporcao",
+        "main": [
+          "428",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "raw": {
+          "n0": 384.14588812959994,
+          "n": 384.14588812959994,
+          "final": 428
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "428"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "428",
+          "participantes"
+        ],
+        "label": "Tamanho amostral",
+        "level": "info",
+        "verdict": "Amostra necessária para estimar 50,0% ± 5,0 pontos percentuais com 95% de confiança",
+        "rows": [
+          [
+            "Amostra sem correção (população infinita)",
+            "385"
+          ],
+          [
+            "Acrescentando 10% de perdas",
+            "428"
+          ]
+        ],
+        "note": "Fórmula para amostragem aleatória simples. Em amostragem por conglomerados, multiplique pelo efeito do desenho (em geral 1,5 a 2).",
+        "raw": {
+          "n0": 384.14588812959994,
+          "n": 384.14588812959994,
+          "final": 428
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}

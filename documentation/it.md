@@ -91,3 +91,42 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Campione necessario per stimare 20,0% ± 5,0 punti percentuali con 95% di confidenza
+
+| Dettagli del risultato | |
+| --- | --- |
+| Campione senza correzione (popolazione infinita) | 246 |
+
+Formula per campionamento casuale semplice. Nel campionamento a grappoli, moltiplicare per l’effetto del disegno (in genere 1,5 a 2).
+
+
+### 2
+
+Campione necessario per stimare 50,0% ± 5,0 punti percentuali con 95% di confidenza
+
+| Dettagli del risultato | |
+| --- | --- |
+| Campione senza correzione (popolazione infinita) | 385 |
+| Con correzione per popolazione finita (N = 1000) | 278 |
+
+Formula per campionamento casuale semplice. Nel campionamento a grappoli, moltiplicare per l’effetto del disegno (in genere 1,5 a 2).
+
+
+### 3
+
+Campione necessario per stimare 50,0% ± 5,0 punti percentuali con 95% di confidenza
+
+| Dettagli del risultato | |
+| --- | --- |
+| Campione senza correzione (popolazione infinita) | 385 |
+| Aggiungendo 10% di perdite | 428 |
+
+Formula per campionamento casuale semplice. Nel campionamento a grappoli, moltiplicare per l’effetto del disegno (in genere 1,5 a 2).
+

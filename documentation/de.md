@@ -91,3 +91,42 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Benötigte Stichprobe, um 20,0 % ± 5,0 Prozentpunkte mit 95 % Konfidenz zu schätzen
+
+| Ergebnisdetails | |
+| --- | --- |
+| Stichprobe ohne Korrektur (unendliche Population) | 246 |
+
+Formel für einfache Zufallsstichprobe. Bei Clusterstichproben mit dem Designeffekt multiplizieren (in der Regel 1,5 bis 2).
+
+
+### 2
+
+Benötigte Stichprobe, um 50,0 % ± 5,0 Prozentpunkte mit 95 % Konfidenz zu schätzen
+
+| Ergebnisdetails | |
+| --- | --- |
+| Stichprobe ohne Korrektur (unendliche Population) | 385 |
+| Mit endlicher Population-Korrektur (N = 1000) | 278 |
+
+Formel für einfache Zufallsstichprobe. Bei Clusterstichproben mit dem Designeffekt multiplizieren (in der Regel 1,5 bis 2).
+
+
+### 3
+
+Benötigte Stichprobe, um 50,0 % ± 5,0 Prozentpunkte mit 95 % Konfidenz zu schätzen
+
+| Ergebnisdetails | |
+| --- | --- |
+| Stichprobe ohne Korrektur (unendliche Population) | 385 |
+| Mit 10 % Verlusten zuschlagen | 428 |
+
+Formel für einfache Zufallsstichprobe. Bei Clusterstichproben mit dem Designeffekt multiplizieren (in der Regel 1,5 bis 2).
+

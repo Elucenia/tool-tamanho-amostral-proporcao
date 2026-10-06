@@ -91,3 +91,42 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Muestra necesaria para estimar 20,0% ± 5,0 puntos porcentuales con 95% de confianza
+
+| Detalles del resultado | |
+| --- | --- |
+| Muestra sin corrección (población infinita) | 246 |
+
+Fórmula para muestreo aleatorio simple. En el muestreo por conglomerados, multiplíquese por el efecto del diseño (en general 1,5 a 2).
+
+
+### 2
+
+Muestra necesaria para estimar 50,0% ± 5,0 puntos porcentuales con 95% de confianza
+
+| Detalles del resultado | |
+| --- | --- |
+| Muestra sin corrección (población infinita) | 385 |
+| Con corrección para población finita (N = 1000) | 278 |
+
+Fórmula para muestreo aleatorio simple. En el muestreo por conglomerados, multiplíquese por el efecto del diseño (en general 1,5 a 2).
+
+
+### 3
+
+Muestra necesaria para estimar 50,0% ± 5,0 puntos porcentuales con 95% de confianza
+
+| Detalles del resultado | |
+| --- | --- |
+| Muestra sin corrección (población infinita) | 385 |
+| Añadiendo 10% de pérdidas | 428 |
+
+Fórmula para muestreo aleatorio simple. En el muestreo por conglomerados, multiplíquese por el efecto del diseño (en general 1,5 a 2).
+
